@@ -4,8 +4,8 @@ type Props = {
   children: React.ReactNode
 }
 
-const Heading = ({ level = "h2", className, children } : Props) => {
-  const classNames = `text-text-clr dark:text-text-clr-dark font-medium ${className}`
+const Heading = ({ level = "h2", className, children }: Props) => {
+  const classNames = `${className} font-medium`
   const getNode = () => {
     switch (level) {
       case "h1":

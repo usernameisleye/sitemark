@@ -33,11 +33,11 @@ const Accordion = ({ question } : { question: QuestionType }) => {
     <div>
         <article 
             onClick={() => setOpen(!open)}
-            className={`p-4 border border-border-clr dark:border-border-clr-dark rounded-lg cursor-pointer ${
+            className={`group p-4 border bg-bg-sec dark:bg-bg-sec-dark border-border-clr dark:border-border-clr-dark rounded-lg cursor-pointer ${
             open && "border-clr-accent dark:border-clr-accent"
         }`}>
             <div className="flex items-center justify-between">
-                <Heading className="w-11/12">
+                <Heading className={`w-11/12 group-hover:text-clr-accent ${open && "text-clr-accent"}`}>
                     {header}
                 </Heading>
 

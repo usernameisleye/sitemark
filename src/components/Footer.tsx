@@ -34,13 +34,18 @@ const Footer = () => {
 
         <div className="flex gap-3 text-clr-accent">
           <Link
-            href="https://github.com/usernameisleye/sitemark"
             target="_blank"
+            title="GitHub"
+            href="https://github.com/usernameisleye/sitemark"
           >
             <Github />
           </Link>{" "}
           |
-          <Link href="https://twitter.com/usernameisleye" target="_blank">
+          <Link 
+            target="_blank"
+            title="Twitter"
+            href="https://twitter.com/usernameisleye" 
+          >
             <Twitter />
           </Link>
         </div>

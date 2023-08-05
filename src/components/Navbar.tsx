@@ -13,12 +13,12 @@ const Navbar = () => {
   const links = [
     {
       href: "/faqs",
-      name: "FAQs"
-    }, 
+      name: "FAQs",
+    },
     {
       href: "/feedback",
-      name: "Feedback"
-    }
+      name: "Feedback",
+    },
   ]
 
   return (
@@ -48,9 +48,11 @@ const Navbar = () => {
         >
           {links.map((link, i) => (
             <li key={i}>
-              <Link 
+              <Link
                 href={link.href}
-                className={`${pathname.startsWith(link.href) && "text-clr-accent"} hover:text-clr-accent`}
+                className={`${
+                  pathname.startsWith(link.href) && "text-clr-accent"
+                } hover:text-clr-accent`}
               >
                 {link.name}
               </Link>

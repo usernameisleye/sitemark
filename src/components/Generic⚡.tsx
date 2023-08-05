@@ -3,12 +3,16 @@ import { Brain } from "lucide-react"
 type Props = {
   content: string
   className?: string
+  disabled?: boolean
+  click?: () => void
 }
 
-const Generic = ({ className, content }: Props) => {
+const Generic = ({ className, content, disabled, click }: Props) => {
   return (
     <button
-      className={`group relative bg-clr-accent h-max p-6 rounded-full overflow-hidden ${className}`}
+      onClick={click}
+      disabled={disabled}
+      className={`group relative bg-clr-accent h-max p-6 rounded-full overflow-hidden disabled:bg-clr-accent-dim disabled:dark:bg-clr-accent-dim-dark disabled:pointer-events-none ${className}`}
     >
       <span className="absolute inset-0 top-1/4 group-hover:-translate-x-96 duration-200">
         {content}

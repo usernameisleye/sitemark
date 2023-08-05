@@ -3,6 +3,7 @@ import Clock from "./Clock"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 import Result from "./Result"
+import Toast from "./Toaster"
 import Button from "./Button"
 import Heading from "./Heading"
 import Generic from "./Generic⚡"
@@ -15,9 +16,10 @@ export {
   Navbar,
   Footer,
   Result,
+  Toast,
   Button,
   Heading,
   Generic,
   Paragraph,
-  Accordion
+  Accordion,
 }

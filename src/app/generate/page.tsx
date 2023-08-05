@@ -78,7 +78,7 @@ export default function Generate() {
         </header>
 
         <div className="flex flex-wrap items-center justify-center gap-3 w-full">
-          <div className="flex justify-center gap-1 grow md:grow-0 md:w-3/5 bg-bg-sec dark:bg-bg-dim-dark p-2 rounded-full">
+          <div className="flex justify-center gap-1 grow-0 md:grow-0 w-full md:w-3/5 bg-bg-sec dark:bg-bg-dim-dark p-2 rounded-full">
             <input
               id="topic"
               type="text"
@@ -91,7 +91,7 @@ export default function Generate() {
               click={generate}
               disabled={disabled}
               content="Generate⚡"
-              className="w-1/2 sm:w-2/5 md:w-1/3"
+              className="w-3/5 md:1/4 lg:w-1/3"
             />
           </div>
 

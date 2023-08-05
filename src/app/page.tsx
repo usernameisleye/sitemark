@@ -30,7 +30,7 @@ export default function Home() {
           writing to new heights
         </Paragraph>
 
-        <div className="flex flex-wrap gap-8">
+        <div className="flex gap-8">
           <Link href="generate">
             <Button>
               <Brain />

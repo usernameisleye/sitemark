@@ -37,7 +37,7 @@ const Accordion = ({ question }: { question: QuestionType }) => {
           open && "border-clr-accent dark:border-clr-accent"
         }`}
       >
-        <div className="flex items-center justify-between">
+        <div className="flex items-center gap-2 justify-between">
           <Heading
             className={`w-11/12 group-hover:text-clr-accent ${
               open && "text-clr-accent"

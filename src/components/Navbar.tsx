@@ -53,13 +53,18 @@ const Navbar = () => {
                 className={`${
                   pathname.startsWith(link.href) && "text-clr-accent"
                 } hover:text-clr-accent`}
+                onClick={() => setShow(false)}
               >
                 {link.name}
               </Link>
             </li>
           ))}
-          <li className="w-1/4">
-            <Link href="generate" className="w-full">
+          <li className="w-1/3">
+            <Link 
+              href="generate" 
+              className="w-full"
+              onClick={() => setShow(false)}
+            >
               <Generic content="Generate" className="w-full" />
             </Link>
           </li>

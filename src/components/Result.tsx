@@ -9,9 +9,9 @@ const Result = ({ content }: { content: string }) => {
   const [text, setText] = useState<string>("")
   const [copy, setCopy] = useClipboard(content)
   
-  let indx = 0
   let speed = 20
   useEffect(() => {
+    let indx = 0
     if(!content || content === undefined) return
     const interval = setInterval(() => {
       setText((prevText) => prevText + content[indx])

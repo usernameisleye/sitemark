@@ -11,7 +11,7 @@ export default function FAQs() {
         </Heading>
         <Paragraph className="md:w-3/5 mx-auto my-4">
           Here, is a compiled list of common inquiries to help you find quick
-          answers to your queries. If you can't find what you're looking for,
+          answers to your queries. If you can not find what you are looking for,
           feel free to reach out to us directly on the{" "}
           <Link href="feedback" className="text-clr-accent underline">
             Feedback page

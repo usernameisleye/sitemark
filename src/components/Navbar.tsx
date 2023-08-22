@@ -59,7 +59,7 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
-          <li className="w-1/3">
+          <li className="sm:w-1/4 w-1/3">
             <Link 
               href="generate" 
               className="w-full"
